@@ -15,32 +15,11 @@ app.set('view engine', 'ejs')
 
 // Mount routes
 
-// app.get('/', function(req, res) {
-//   res.send('<h1>Hello friend</h1>')
-// })
-
-// app.get('/home', function(req, res) {
-//   res.render('home')
-// })
-
-
-
-// app.get('/home', function(req, res) {
-//   res.render('home')
-// })
-
-// app.get('/', function(req, res) {
-//   res.redirect('/students')
-// })
-
-
-
 app.get('/students', function(req, res){
   res.render('students/index', {
     students: students
   })
 })
-
 
 
 // Tell the app to listen on port 3000

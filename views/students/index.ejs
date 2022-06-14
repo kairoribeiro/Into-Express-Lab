@@ -9,13 +9,17 @@
 <body>
     <h1>Students</h1>
     <ul>
-      <% students.forEach(student => { %>
-        <li>
-                  <%= students.text %> 
-                  - 
-                  <%= students.done ? 'done' : 'not done' %>
-              </li>
-      <% }) %>
+      <body>
+        <ul>
+          <% students.forEach(students => { %>
+            <li>
+              <%= students.text %> 
+              - 
+              <%= students.done ? 'APROVED' : 'REPROVED' %>
+            </li>
+          <% }) %>
+        </ul>
+      </body>
     </ul>
   </body>
 </html>
